@@ -42,7 +42,6 @@ body {
     a:hover {
       background: -webkit-linear-gradient(yellow, red);
       color: black;
-      /* -webkit-background-clip: text; */
       -webkit-text-fill-color: transparent;
       border: 2px solid -webkit-linear-gradient(yellow, red);
       cursor: pointer
@@ -181,7 +180,7 @@ body {
       gap: 25px;
       margin-top: 25px;
 
-      button {
+      a {
         width: 60px;
         height: 60px;
         border: none;
@@ -189,9 +188,11 @@ body {
         border: 2px solid rgba(227, 227, 227, 1);
         background-color: #fff;
         cursor: pointer;
+        text-align: center;
+        padding-top: 15px;
       }
 
-      button:hover {
+      a:hover {
         background-color: aqua;
       }
     }

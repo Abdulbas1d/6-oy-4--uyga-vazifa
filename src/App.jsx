@@ -14,7 +14,7 @@ function App() {
   const [users, setUsers] = useState([])
 
   function validate(data) {
-    if (data.companyName.length < 3 && /^\d/.test(companyName)) {
+    if (!data.companyName) {
       alert("Kompaniya nomi kamida 3 ta harfdan iborat bo'lishi kerak");
       return false;
     }
@@ -119,21 +119,21 @@ function App() {
         <div className="links">
           <label>Linklar <span>*</span></label>
           <div className="buttons">
-            <button>
+            <a>
               <img src={mapPicture} alt="" />
-            </button>
-            <button>
+            </a>
+            <a>
               <img src={instagramPicture} alt="" />
-            </button>
-            <button>
+            </a>
+            <a>
               <img src={telegramPicture} alt="" />
-            </button>
-            <button>
+            </a>
+            <a>
               <img src={faseBookPicture} alt="" />
-            </button>
-            <button>
+            </a>
+            <a>
               <img src={gitHubPicture} alt="" />
-            </button>
+            </a>
           </div>
         </div>
 
