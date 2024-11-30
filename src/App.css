@@ -38,14 +38,6 @@ body {
       color: rgb(255, 255, 255);
       font-size: 18px;
     }
-
-    a:hover {
-      background: -webkit-linear-gradient(yellow, red);
-      color: black;
-      -webkit-text-fill-color: transparent;
-      border: 2px solid -webkit-linear-gradient(yellow, red);
-      cursor: pointer
-    }
   }
 
   .select {
